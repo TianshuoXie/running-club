@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Run Together is a welcoming running club for beginners and intermediate runners.">
+  <title>Run Together | Running Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Run Together home">
+      <span class="brand-mark" aria-hidden="true">R</span>
+      <span>Run Together</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#runs">Upcoming runs</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A running club for every start</p>
+        <h1 id="hero-title">Find your pace.<br><span>Run together.</span></h1>
+        <p class="intro">Welcome to <strong>Run Together</strong>, a friendly place for beginners and intermediate runners to build confidence, meet new friends, and enjoy the joy of running.</p>
+        <a class="primary-link" href="#runs">Explore upcoming runs <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="hero-card" aria-label="Club summary">
+        <div class="hero-card-top">
+          <span class="demo-pill">Demo events</span>
+          <span class="card-number">01</span>
+        </div>
+        <p class="hero-card-label">This week</p>
+        <p class="hero-card-value">3 runs</p>
+        <p class="hero-card-note">Open to every skill level</p>
+        <div class="hero-card-line" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div>
+        <p class="eyebrow">Welcome, runner</p>
+        <h2 id="about-title">You do not need to be fast to belong.</h2>
+      </div>
+      <p>Whether this is your first mile or your next challenge, our friendly group welcomes everyone. We keep the pace comfortable, the conversation easy, and the goal simple: move, learn, and enjoy the run.</p>
+    </section>
+
+    <section class="runs-section" id="runs" aria-labelledby="runs-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Plan your next run</p>
+          <h2 id="runs-title">Upcoming runs</h2>
+        </div>
+        <p class="demo-note"><span aria-hidden="true">●</span> Clearly labeled demo events</p>
+      </div>
+
+      <div class="filters" aria-label="Filter upcoming runs">
+        <button class="filter-button is-active" type="button" data-filter="All" aria-pressed="true">All</button>
+        <button class="filter-button" type="button" data-filter="Beginner" aria-pressed="false">Beginner</button>
+        <button class="filter-button" type="button" data-filter="Intermediate" aria-pressed="false">Intermediate</button>
+      </div>
+
+      <div class="runs-list" id="runs-list" aria-live="polite"></div>
+      <p class="empty-message" id="empty-message" hidden>No runs match this filter.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Tianshuo Xie</p>
+    <p>Run Together · A friendly community for every pace</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
