@@ -1,78 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Run Together is a welcoming running club for beginners and intermediate runners.">
-  <title>Run Together | Running Club</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Run Together home">
-      <span class="brand-mark" aria-hidden="true">R</span>
-      <span>Run Together</span>
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="#runs">Upcoming runs</a>
-      <a href="#about">About</a>
-    </nav>
-  </header>
-
-  <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow">A running club for every start</p>
-        <h1 id="hero-title">Find your pace.<br><span>Run together.</span></h1>
-        <p class="intro">Welcome to <strong>Run Together</strong>, a friendly place for beginners and intermediate runners to build confidence, meet new friends, and enjoy the joy of running.</p>
-        <a class="primary-link" href="#runs">Explore upcoming runs <span aria-hidden="true">→</span></a>
-      </div>
-
-      <div class="hero-card" aria-label="Club summary">
-        <div class="hero-card-top">
-          <span class="demo-pill">Demo events</span>
-          <span class="card-number">01</span>
-        </div>
-        <p class="hero-card-label">This week</p>
-        <p class="hero-card-value">3 runs</p>
-        <p class="hero-card-note">Open to every skill level</p>
-        <div class="hero-card-line" aria-hidden="true"></div>
-      </div>
-    </section>
-
-    <section class="about" id="about" aria-labelledby="about-title">
-      <div>
-        <p class="eyebrow">Welcome, runner</p>
-        <h2 id="about-title">You do not need to be fast to belong.</h2>
-      </div>
-      <p>Whether this is your first mile or your next challenge, our friendly group welcomes everyone. We keep the pace comfortable, the conversation easy, and the goal simple: move, learn, and enjoy the run.</p>
-    </section>
-
-    <section class="runs-section" id="runs" aria-labelledby="runs-title">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Plan your next run</p>
-          <h2 id="runs-title">Upcoming runs</h2>
-        </div>
-        <p class="demo-note"><span aria-hidden="true">●</span> Clearly labeled demo events</p>
-      </div>
-
-      <div class="filters" aria-label="Filter upcoming runs">
-        <button class="filter-button is-active" type="button" data-filter="All" aria-pressed="true">All</button>
-        <button class="filter-button" type="button" data-filter="Beginner" aria-pressed="false">Beginner</button>
-        <button class="filter-button" type="button" data-filter="Intermediate" aria-pressed="false">Intermediate</button>
-      </div>
-
-      <div class="runs-list" id="runs-list" aria-live="polite"></div>
-      <p class="empty-message" id="empty-message" hidden>No runs match this filter.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>Created by Tianshuo Xie</p>
-    <p>Run Together · A friendly community for every pace</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Run Together — Find your pace</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head>
+<body><header><a class="brand" href="#">↗ Run Together<span>LOCAL RUNNING CLUB</span></a><nav><a href="#runs">Find a run</a><a href="#first">Your first run</a><a href="#bookings">My runs <span id="count">0</span></a></nav></header>
+<main><section class="hero"><div><p class="eyebrow">A LITTLE MOVEMENT. A LITTLE CONNECTION.</p><h1>Your pace.<br>Your people.</h1><p class="intro">You don’t have to be fast to belong. Find a local run, know what to expect, and take that first step together.</p><a class="button" href="#runs">Find your next run ↗</a><p class="small">Beginner friendly · No membership needed</p></div><div class="track" aria-hidden="true"><div class="oval o1"></div><div class="oval o2"></div><div class="oval o3"></div><div class="oval o4"></div><span class="track-word">LET’S<br>GO<br>TOGETHER.</span><span class="track-note">EVERY PACE HAS A PLACE ↗</span></div></section>
+<div class="promise"><span>01 &nbsp; Know the pace before you go</span><span>02 &nbsp; Find your meeting point</span><span>03 &nbsp; Come solo. Leave connected.</span></div>
+<section id="runs"><div class="section-head"><div><p class="eyebrow">MAKE ROOM FOR A RUN</p><h2>Find your next start line.</h2></div><p>Three ways to get moving.<br>Choose what feels right for you.</p></div><div class="filters" role="group" aria-label="Filter runs"><button data-filter="All" aria-pressed="true">All runs</button><button data-filter="Beginner" aria-pressed="false">Beginner</button><button data-filter="Intermediate" aria-pressed="false">Intermediate</button></div><div class="cards" id="cards"></div><p class="small">Course demonstration: all events, hosts and meeting details are sample content. Joining saves a demo booking on this browser only.</p></section>
+<section id="first" class="first"><div><p class="eyebrow">NEW HERE? YOU’RE IN GOOD COMPANY.</p><h2>The first step<br>can be the hardest.</h2><p>Here’s what to expect when you arrive.</p></div><ol><li><strong>Meet 10 minutes before the start</strong><p>Your run details show the exact meeting point and how to recognise your host.</p></li><li><strong>Say hello — coming alone is welcome</strong><p>The host introduces the group and explains the route. Bring water and comfortable shoes.</p></li><li><strong>Move at a pace that fits</strong><p>Check each run’s pace and rest policy. Our beginner run includes walking breaks and regrouping.</p></li></ol></section>
+<section id="bookings"><div class="section-head"><div><p class="eyebrow">YOUR NEXT SMALL ADVENTURE</p><h2>My runs</h2></div></div><div id="my-runs"></div></section>
+<aside class="course-note">Student project · Based on the earlier website evaluation and initial design assumptions. User interviews have not yet been completed.</aside></main>
+<footer><strong>↗ Run Together</strong><span>Created by Tianshuo Xie</span><a href="prototype.html">View low-fidelity prototype ↗</a></footer>
+<dialog id="details"><button class="close" aria-label="Close run details">×</button><div id="detail-content"></div></dialog><p id="status" class="toast" role="status" aria-live="polite"></p></body></html>
